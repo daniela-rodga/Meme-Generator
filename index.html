@@ -44,9 +44,9 @@
     <nav class="navbar">
         <ul class="horizontal-list">
             <li class="centered-title">Meme Generator</li>
-            <li class="navbar-item light-mode"><a href="#image"><i class="fa-solid fa-file-image"></i>Image</button></li>
-            <li class="navbar-item light-mode"><a href="#text"><i class="fa-solid fa-font"></i>Text</button></li>
-            <li class="navbar-item light-mode"><i class="fa-solid fa-lightbulb">Dark</i></li>
+            <li class="navbar-item light-mode"><a href="#image"><i class="fa-solid fa-file-image"></i>Image</a></li>
+            <li class="navbar-item light-mode"><a href="#text"><i class="fa-solid fa-font"></i>Text</a></li>
+            <li class="navbar-item light-mode"><i class="fa-solid fa-lightbulb"></i>Dark mode</li>
         </ul>
     </nav>
 
@@ -54,23 +54,42 @@
     <main class="section main-section-meme">
         <!-- Meme Top Text -->
         <div class="meme top-text">
-
+            <p class="top-text">Here's gonna be the top text of your meme once this project it's done</p>
         </div>
         <!-- Meme Image -->
         <div class="meme meme-image">
-
+            <img src="" alt="Meme Image" class="img-meme">
         </div>
         <!-- Meme Bottom Text -->
         <div class="meme bot-text">
-
+            <p class="top-text">Here's gonna be the bottom text of your meme once this project it's done</p>
         </div>
         <!-- Meme Download button -->
-        <button><i class="fa-solid fa-download"></i>Download meme</button>
+        <button><i class="fa-solid fa-download"></i>Download your meme</button>
     </main>
 
     <!-- Sidebar Section: Image -->
     <section class="section sidebar section-image">
-        
+        <form action="GET">
+            <label for="meme_image" class="form-label">URL</label>
+            <input type="text" name="meme_image" id="meme_image" class="form-input">
+
+            <div class="flex-container">
+                <label for="bg_meme_image" class="form-label">BACKGROUND</label>
+                <div class="element-row">
+                    <li class="form-item">
+                        <input type="text" name="full_name" id="first_name" class="form-input" placeholder="e. g.: Daniela" required>                          
+                    </li>
+                </div>
+                <div class="element-row">
+                    <li class="form-item">
+                        <input type="text" name="full_name" id="last_name" class="form-input" placeholder="e. g.: Rodríguez" required>
+                    </li>
+                </div>
+            </div>
+
+
+        </form>
     </section>
 </body>
 </html>
