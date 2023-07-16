@@ -48,7 +48,7 @@ function updateFiltersValues () {
             {suffixFilter = "%"}
         else if(currentFilter.id === "blur")
             {suffixFilter = "px"}
-        else if(currentFilter.id === "hue-rotation")
+        else if(currentFilter.id === "hue-rotate")
             {suffixFilter = "deg"}
         
         if(index == filters.length -1)
@@ -75,8 +75,8 @@ function resetFiltersValues () {
     document.getElementById("blur").value = "0"
     document.getElementById("grayscale").value = "0"
     document.getElementById("sepia").value = "0"
-    document.getElementById("hue-rotation").value = "0"
-    document.getElementById("saturation").value = "100"
+    document.getElementById("hue-rotate").value = "0"
+    document.getElementById("saturate").value = "100"
     document.getElementById("invert").value = "0"
 }
 
