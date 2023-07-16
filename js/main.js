@@ -106,8 +106,32 @@ function updateText () {
     topText.style.font = auxFont
     bottomText.style.font = auxFont
 
-
 }
 
 let getTextProperties = $("text_properties")
 getTextProperties.addEventListener("change", updateText)
+
+// Update the text align of the meme
+let textAlignLeft = $("left-text-align")
+let textAlignCenter = $("center-text-align")
+let textAlignRight = $("right-text-align")
+textAlignLeft.addEventListener("click", (event) => {
+    let topText = $("top_text_meme")
+    let bottomText = $("bot_text_meme")
+    topText.style.textAlign = "left"
+    bottomText.style.textAlign = "left"
+})
+
+textAlignCenter.addEventListener("click", (event) => {
+    let topText = $("top_text_meme")
+    let bottomText = $("bot_text_meme")
+    topText.style.textAlign = "center"
+    bottomText.style.textAlign = "center"
+})
+
+textAlignRight.addEventListener("click", (event) => {
+    let topText = $("top_text_meme")
+    let bottomText = $("bot_text_meme")
+    topText.style.textAlign = "right"
+    bottomText.style.textAlign = "right"
+})
