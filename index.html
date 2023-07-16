@@ -38,9 +38,6 @@
     
     <!-- Cascade Style Sheet -->
     <link rel="stylesheet" href="./styles/styles.css">
-
-    <!-- JS script -->
-    <script src="./js/main.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -61,8 +58,8 @@
         </div>
         <!-- Meme Image -->
         <div class="meme meme-image">
-            <div class="flex-container">
-                <img alt="Meme image" id="meme_image_src" class="meme-display-size">
+            <div class="flex-container" id="meme_image_container">
+                <img alt="Meme image" id="meme_image" class="meme-display-size">
             </div>
         </div>
         <!-- Meme Bottom Text -->
@@ -83,18 +80,18 @@
                 <label for="background_meme_image" class="form-label">BACKGROUND</label>
                 <div class="element-row">
                     <li class="form-item">
-                        <input type="color" name="background_meme_color" id="background_meme_color" value="#FFFFFF" class="form-input color-picker">
+                        <input type="color" name="background_meme_color" id="background_meme_color" value="#FFFFFF" class="form-input color-picker background-color">
                         <span id="background_meme_color_label">#FFFFFF</span>                          
                     </li>
                 </div>
                 <div class="element-row">
                     <li class="form-item">
-                        <select name="bg_effect" id="bg_effect">
-                            <option value="none">None</option>
+                        <select name="background_meme_color_effect" id="background_meme_color_effect" class="background-color">
+                            <option value="normal">None</option>
                             <option value="lighten">Lighten</option>
                             <option value="darken">Darken</option>
                             <option value="difference">Difference</option>
-                            <option value="brightness">Brightness</option>
+                            <option value="luminosity">Luminosity</option>
                             <option value="multiply">Multiply</option>
                         </select>
                     </li>
@@ -166,4 +163,6 @@
         </form>
     </section>
 </body>
+<!-- JS script -->
+<script src="./js/main.js"></script>
 </html>
