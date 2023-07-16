@@ -54,7 +54,7 @@
     <main class="section main-section-meme">
         <!-- Meme Top Text -->
         <div class="meme top-text">
-            <p class="top-text">Here's gonna be the top text of your meme once this project it's done</p>
+            <p class="top-text" id="top_text_meme">Here's gonna be the top text of your meme once this project it's done</p>
         </div>
         <!-- Meme Image -->
         <div class="meme meme-image">
@@ -64,7 +64,7 @@
         </div>
         <!-- Meme Bottom Text -->
         <div class="meme bot-text">
-            <p class="top-text">Here's gonna be the bottom text of your meme once this project it's done</p>
+            <p class="top-text" id="bot_text_meme">Here's gonna be the bottom text of your meme once this project it's done</p>
         </div>
         <!-- Meme Download button -->
         <button><i class="fa-solid fa-download"></i>Download your meme</button>
@@ -143,15 +143,17 @@
 
     <!-- Sidebar Section: Text -->
     <section class="section sidebar section-text">
-        <form action="GET">
+        <form action="GET" id="text_properties">
             <label for="top_text" class="form-label">SUPERIOR</label><br>
             <input type="textarea" name="top_text" id="top_text" class="form-input" placeholder="TOP TEXT">
+            <br>
 
             <input type="checkbox" id="no_top_text" name="no_top_text" value="top_text">
             <label for="no_top_text">No top text</label><br>
 
             <label for="bot_text" class="form-label">BOTTOM</label><br>
             <input type="textarea" name="bot_text" id="bot_text" class="form-input" placeholder="BOTTOM TEXT">
+            <br>
 
             <input type="checkbox" id="no_bot_text" name="no_bot_text" value="bot_text">
             <label for="no_bot_text">No bottom text</label><br>

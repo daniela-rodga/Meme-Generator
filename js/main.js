@@ -57,8 +57,6 @@ function updateFiltersValues () {
             auxFilter += currentFilter.id+"("+currentFilter.value+suffixFilter+")"
         else
             auxFilter += currentFilter.id+"("+currentFilter.value+suffixFilter+") "
-        
-
     }
     console.log(auxFilter)
     $("meme_image").style.filter = auxFilter
@@ -88,3 +86,15 @@ filtersReset.addEventListener("reset", (event) => {
     updateFiltersValues()
     
 })
+
+function updateText () {
+    let newTopText = $("top_text").value
+    let newBotText = $("bot_text").value
+    let topText = $("top_text_meme")
+    let bottomText = $("bot_text_meme")
+    topText.innerHTML = newTopText
+    bottomText.innerHTML = newBotText
+}
+
+let getTextProperties = $("text_properties")
+getTextProperties.addEventListener("change", updateText)
