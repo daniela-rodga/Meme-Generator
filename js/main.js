@@ -106,7 +106,15 @@ function updateText () {
     topText.style.font = auxFont
     bottomText.style.font = auxFont
 
-
+    // Update the opacity of the text background
+    let checkBox = $("no_background")
+    console.log(checkBox.checked)
+    if(checkBox.checked)
+        {
+            $("meme_top_text_container").style.backgroundColor = "rgba(0,0,0,0)"
+            $("meme_bot_text_container").style.backgroundColor = "rgba(0,0,0,0)"
+        }
+    
 }
 
 let getTextProperties = $("text_properties")
