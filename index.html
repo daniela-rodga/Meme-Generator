@@ -78,16 +78,36 @@
                 <label for="bg_meme_image" class="form-label">BACKGROUND</label>
                 <div class="element-row">
                     <li class="form-item">
-                        <input type="text" name="full_name" id="first_name" class="form-input" placeholder="e. g.: Daniela" required>                          
+                        <input type="text" name="bg_color" id="bg_color" class="form-input" placeholder="e. g.: Here's gonna be the color picker" required>                          
                     </li>
                 </div>
                 <div class="element-row">
                     <li class="form-item">
-                        <input type="text" name="full_name" id="last_name" class="form-input" placeholder="e. g.: Rodríguez" required>
+                        <select name="bg_effect" id="bg_effect">
+                            <option value="none">None</option>
+                            <option value="lighten">Lighten</option>
+                            <option value="darken">Darken</option>
+                            <option value="difference">Difference</option>
+                            <option value="brightness">Brightness</option>
+                            <option value="multiply">Multiply</option>
+                        </select>
                     </li>
                 </div>
             </div>
 
+            <label for="filter_meme_image" class="form-label">FILTERS</label>
+            <div class="slide-container">
+                <input type="range" min="0" max="1" value="1" step="0.1" class="slider" id="brightness">
+                <input type="range" min="0" max="1" value="1" step="0.1" class="slider" id="opacity">
+                <input type="range" min="100%" max="1000%" value="100%" step="1%" class="slider" id="contrast">
+                <input type="range" min="0px" max="10px" value="0px" step="0.1px" class="slider" id="blur">
+                <input type="range" min="0%" max="100%" value="0%" step="1%" class="slider" id="grayscale">
+                <input type="range" min="0%" max="100%" value="0%" step="1%" class="slider" id="sepia">
+                <input type="range" min="0deg" max="359deg" value="1deg" step="0deg" class="slider" id="hue-rotation">
+                <input type="range" min="100%" max="1000%" value="100%" step="10%" class="slider" id="saturation">
+                <input type="range" min="0" max="1" value="1" step="0.1" class="slider" id="invert">
+                
+            </div>
 
         </form>
     </section>
