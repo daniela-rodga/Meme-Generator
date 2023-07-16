@@ -106,6 +106,7 @@ function updateText () {
     topText.style.font = auxFont
     bottomText.style.font = auxFont
 
+
 }
 
 let getTextProperties = $("text_properties")
@@ -135,3 +136,28 @@ textAlignRight.addEventListener("click", (event) => {
     topText.style.textAlign = "right"
     bottomText.style.textAlign = "right"
 })
+
+// Update the color of the text 
+let newTextColor = $("text_color")
+let newTextBgColor = $("background_text_color")
+
+
+newTextColor.addEventListener("input", (event) => {
+    let topText = $("top_text_meme")
+    let bottomText = $("bot_text_meme")
+    console.log(newTextColor.value)
+    topText.style.color = newTextColor.value
+    bottomText.style.color = newTextColor.value
+    
+})
+
+newTextBgColor.addEventListener("input", (event) => {
+    let bgColorTop = $("meme_top_text_container")
+    let bgColorBot = $("meme_bot_text_container")
+    console.log(newTextBgColor.value)
+    bgColorTop.style.backgroundColor = newTextBgColor.value
+    bgColorBot.style.backgroundColor = newTextBgColor.value    
+})
+
+
+
