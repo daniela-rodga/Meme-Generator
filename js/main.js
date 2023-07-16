@@ -34,3 +34,13 @@ backgroundColor.addEventListener("change", updateBackgroundColor)
 
 let backgroundColorEffect = document.getElementById("background_meme_color_effect")
 backgroundColorEffect.addEventListener("change", updateBackgroundColor)
+
+// Retrieving the array of filters in class "slider"
+// Then, iterating through each element (filter) to check their value and apply it.
+let filters = document.getElementsByClassName("slider")
+for(var index=0;index < filters.length;index++){
+    let currentFilter = filters[index]
+    currentFilter.addEventListener("input", (event) => {
+        document.getElementById("meme_image").style.filter = currentFilter.id+"("+currentFilter.value+")"
+    })
+}
