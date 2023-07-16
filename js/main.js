@@ -88,12 +88,19 @@ filtersReset.addEventListener("reset", (event) => {
 })
 
 function updateText () {
+    // Update the legend on top and bottom
     let newTopText = $("top_text").value
     let newBotText = $("bot_text").value
     let topText = $("top_text_meme")
     let bottomText = $("bot_text_meme")
     topText.innerHTML = newTopText
     bottomText.innerHTML = newBotText
+
+    // Update the font being used
+    let newTextFont = $("meme_font").value
+    topText.style.fontFamily = newTextFont
+    bottomText.style.fontFamily = newTextFont
+
 }
 
 let getTextProperties = $("text_properties")
