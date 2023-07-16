@@ -98,8 +98,14 @@ function updateText () {
 
     // Update the font being used
     let newTextFont = $("meme_font").value
-    topText.style.fontFamily = newTextFont
-    bottomText.style.fontFamily = newTextFont
+
+    // Update the font size being used
+    let newFontSize = $("meme_font_size").value
+    let auxFont = newFontSize+"px"+" "+newTextFont
+    console.log(auxFont)
+    topText.style.font = auxFont
+    bottomText.style.font = auxFont
+
 
 }
 
