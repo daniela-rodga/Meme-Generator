@@ -110,11 +110,18 @@ function updateText () {
     let checkBox = $("no_background")
     console.log(checkBox.checked)
     if(checkBox.checked)
-        {
-            $("meme_top_text_container").style.backgroundColor = "rgba(0,0,0,0)"
-            $("meme_bot_text_container").style.backgroundColor = "rgba(0,0,0,0)"
-        }
-    
+    {
+        $("meme_top_text_container").style.backgroundColor = "rgba(0,0,0,0)"
+        $("meme_bot_text_container").style.backgroundColor = "rgba(0,0,0,0)"
+    }
+    else
+    {
+        let newTextBgColor = $("background_text_color")
+        let bgColorTop = $("meme_top_text_container")
+        let bgColorBot = $("meme_bot_text_container")
+        bgColorTop.style.backgroundColor = newTextBgColor.value
+        bgColorBot.style.backgroundColor = newTextBgColor.value 
+    }
 }
 
 let getTextProperties = $("text_properties")
@@ -153,7 +160,6 @@ let newTextBgColor = $("background_text_color")
 newTextColor.addEventListener("input", (event) => {
     let topText = $("top_text_meme")
     let bottomText = $("bot_text_meme")
-    console.log(newTextColor.value)
     topText.style.color = newTextColor.value
     bottomText.style.color = newTextColor.value
     
@@ -162,7 +168,6 @@ newTextColor.addEventListener("input", (event) => {
 newTextBgColor.addEventListener("input", (event) => {
     let bgColorTop = $("meme_top_text_container")
     let bgColorBot = $("meme_bot_text_container")
-    console.log(newTextBgColor.value)
     bgColorTop.style.backgroundColor = newTextBgColor.value
     bgColorBot.style.backgroundColor = newTextBgColor.value    
 })
