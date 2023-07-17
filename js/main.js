@@ -123,6 +123,14 @@ function updateText () {
         bgColorBot.style.backgroundColor = newTextBgColor.value 
         $ ("background_text_color_label").innerHTML = newTextBgColor.value
     }
+
+    // Update the margin (bottom and top) of each paragraph (bottom and top)
+    let newMargin = $("meme_text_margin").value
+    topText.style.marginTop = newMargin+"px" 
+    topText.style.marginBottom = newMargin+"px" 
+    bottomText.style.marginTop = newMargin+"px" 
+    bottomText.style.marginBottom = newMargin+"px" 
+    
 }
 
 let getTextProperties = $("text_properties")
