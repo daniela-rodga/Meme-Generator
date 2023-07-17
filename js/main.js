@@ -121,6 +121,7 @@ function updateText () {
         let bgColorBot = $("meme_bot_text_container")
         bgColorTop.style.backgroundColor = newTextBgColor.value
         bgColorBot.style.backgroundColor = newTextBgColor.value 
+        $ ("background_text_color_label").innerHTML = newTextBgColor.value
     }
 }
 
@@ -162,6 +163,7 @@ newTextColor.addEventListener("input", (event) => {
     let bottomText = $("bot_text_meme")
     topText.style.color = newTextColor.value
     bottomText.style.color = newTextColor.value
+    $ ("text_meme_color_label").innerHTML = newTextColor.value
     
 })
 
@@ -170,6 +172,7 @@ newTextBgColor.addEventListener("input", (event) => {
     let bgColorBot = $("meme_bot_text_container")
     bgColorTop.style.backgroundColor = newTextBgColor.value
     bgColorBot.style.backgroundColor = newTextBgColor.value    
+    $ ("background_text_color_label").innerHTML = newTextBgColor.value
 })
 
 
