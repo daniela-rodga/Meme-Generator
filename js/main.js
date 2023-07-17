@@ -175,5 +175,31 @@ newTextBgColor.addEventListener("input", (event) => {
     $ ("background_text_color_label").innerHTML = newTextBgColor.value
 })
 
+// Update the text outline
+let noTextStroke = $ ("no-text-stroke")
+let lightTextStroke = $ ("light-text-stroke")
+let darkTextStroke = $ ("dark-text-stroke")
+
+noTextStroke.addEventListener("click", (event) => {
+    let topText = $("top_text_meme")
+    let bottomText = $("bot_text_meme")
+    topText.style.webkitTextStroke = "0px rgba(0,0,0,0)"
+    bottomText.style.webkitTextStroke = "0px rgba(0,0,0,0)"
+})
+
+lightTextStroke.addEventListener("click", (event) => {
+    let topText = $("top_text_meme")
+    let bottomText = $("bot_text_meme")
+    topText.style.webkitTextStroke = "2px white"
+    bottomText.style.webkitTextStroke = "2px white"
+})
+
+darkTextStroke.addEventListener("click", (event) => {
+    let topText = $("top_text_meme")
+    let bottomText = $("bot_text_meme")
+    topText.style.webkitTextStroke = "2px black"
+    bottomText.style.webkitTextStroke = "2px black"
+})
+
 
 
