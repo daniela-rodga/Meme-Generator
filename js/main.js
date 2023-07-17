@@ -102,7 +102,6 @@ function updateText () {
     // Update the font size being used
     let newFontSize = $("meme_font_size").value
     let auxFont = newFontSize+"px"+" "+newTextFont
-    console.log(auxFont)
     topText.style.font = auxFont
     bottomText.style.font = auxFont
 
@@ -130,6 +129,11 @@ function updateText () {
     topText.style.marginBottom = newMargin+"px" 
     bottomText.style.marginTop = newMargin+"px" 
     bottomText.style.marginBottom = newMargin+"px" 
+
+    // Update the line spacing of each paragraph (bottom and top)
+    let newLineSpacing = $("meme_text_line_spacing").value
+    topText.style.lineHeight = newLineSpacing
+    bottomText.style.lineHeight = newLineSpacing
     
 }
 
