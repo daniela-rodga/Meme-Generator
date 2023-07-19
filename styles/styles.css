@@ -1,0 +1,48 @@
+/* Cascade Styles Configuration for Meme Generator Project courtesy of Daniela Rodríguez awesome capabilities */
+* {
+    box-sizing:content-box;
+}
+
+/* Navigation bar (navbar) styles */
+.navbar {
+    top: 0;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-right: 21%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    background-color: #191E2B;
+    position: sticky;
+}
+
+/* Styles while hovering on elements of the navigation bar */
+.navbar-item {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 4px;
+}
+
+.navbar-item:hover {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #A3A6AF;
+    opacity: 0.5;
+    border-radius: 4px;
+    transition-duration: 200ms;    
+}
+
+/* Body set-up */
+body {
+    padding: 0em;  
+    cursor: auto; 
+    margin: 0;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
