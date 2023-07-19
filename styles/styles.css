@@ -97,10 +97,21 @@ a:visited {
 }
 
 /* Styles for Main Section */
-.main-section-meme{
+.main-section-meme {
     background-color: #EEEEEE;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
+.meme-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.meme-image-container {
+    width: 100%;
+    flex-grow: 1;
+    background-size: cover;
+}

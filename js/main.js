@@ -1,18 +1,20 @@
 const $ = (id) => document.getElementById(id)
 
 function DOMLoaded () {
-    let imageSource = "./img/meme/background_default.png"
-    $("meme_image").src = imageSource
+    $("meme_image").style.backgroundColor = "black"
+    console.log($("meme_image").style.backgroundColor)
 }
 
 addEventListener("DOMContentLoaded", DOMLoaded)
 
+let memeImageURL = $("meme_image_url")
+
 function changeImageSource () {
-    let imageSource = $("meme_image_url").value
-    $("meme_image").src = imageSource
+    let newMemeImg = memeImageURL.value
+    $("meme_image").style.backgroundImage = "url("+newMemeImg+")"
+    console.log($("meme_image").style.backgroundImage)
 }
 
-let memeImageURL = $("meme_image_url")
 
 memeImageURL.addEventListener("input", changeImageSource)
 
