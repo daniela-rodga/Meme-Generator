@@ -6,13 +6,12 @@
 /* Navigation bar (navbar) styles */
 .navbar {
     top: 0;
-    padding: 0.8em;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     text-align: center;
     z-index: 1000;
-    background-color: #191E2B;
+    background-color: #E0E0E0;
     position: sticky;
 }
 
@@ -30,8 +29,7 @@
     padding-bottom: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: #A3A6AF;
-    opacity: 0.5;
+    background-color: rgba(163, 166, 175, 0.4);
     border-radius: 4px;
     transition-duration: 200ms;    
 }
@@ -45,6 +43,7 @@ body {
     display:flex;
     flex-direction: column;
     font-family: 'Space Grotesk', sans-serif;
+    color: #424242;
 }
 
 /* Styles for the lists used in the document */
@@ -62,4 +61,25 @@ body {
     padding-right: 0.3rem;
 }
 
+/* Hyperlink styles */
+/* Hyperlink not visited */
+a:link {
+    color: #424242;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+  /* Hyperlink visited */
+a:visited {
+    color: #424242;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Styles for the titles */
+.project-title {
+    font-weight: 800;
+    font-size: 2em;
+    padding-bottom: 1rem;
+}
 
