@@ -44,6 +44,7 @@ body {
     min-height: 100vh;
     display:flex;
     flex-direction: column;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 /* Styles for the lists used in the document */
@@ -54,6 +55,11 @@ body {
 .horizontal-list li {
     display: inline-block;
     margin-right: 0.5em;
+}
+
+/* Styles for the icons from Font Awesome */
+.fa-solid {
+    padding-right: 0.3rem;
 }
 
 
