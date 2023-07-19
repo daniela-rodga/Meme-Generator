@@ -73,76 +73,79 @@
     </main>
 
     <!-- Sidebar Section: Image -->
-    <section class="section sidebar section-image">
-        <form action="GET" id="image_properties">
-            <label for="meme_image_url" class="form-label">URL</label>
-            <input type="text" name="meme_image_url" id="meme_image_url" class="form-input">
-
-            <div class="flex-container">
-                <label for="background_meme_image" class="form-label">BACKGROUND</label>
-                <div class="element-row">
-                    <input type="color" name="background_meme_color" id="background_meme_color" value="#FFFFFF" class="form-input color-picker background-color">
-                    <span id="background_meme_color_label">#FFFFFF</span>                          
+    <section class="sidebar section-image" style="width:16.5%;right:0;">
+        <div class="section-image">
+            <p class="image-section-title">IMAGEN</p>
+            <form action="GET" id="image_properties">
+                <label for="meme_image_url" class="form-label">URL</label><br>
+                <input type="text" name="meme_image_url" id="meme_image_url" class="form-input">
+    
+                <div class="flex-container">
+                    <label for="background_meme_image" class="form-label">BACKGROUND</label>
+                    <div class="element-row">
+                        <input type="color" name="background_meme_color" id="background_meme_color" value="#FFFFFF" class="form-input color-picker background-color">
+                        <span id="background_meme_color_label">#FFFFFF</span>                          
+                    </div>
+                    <div class="element-row">
+                        <li class="form-item">
+                            <select name="background_meme_color_effect" id="background_meme_color_effect" class="background-color">
+                                <option value="normal">None</option>
+                                <option value="lighten">Lighten</option>
+                                <option value="darken">Darken</option>
+                                <option value="difference">Difference</option>
+                                <option value="luminosity">Luminosity</option>
+                                <option value="multiply">Multiply</option>
+                            </select>
+                        </li>
+                    </div>
                 </div>
-                <div class="element-row">
-                    <li class="form-item">
-                        <select name="background_meme_color_effect" id="background_meme_color_effect" class="background-color">
-                            <option value="normal">None</option>
-                            <option value="lighten">Lighten</option>
-                            <option value="darken">Darken</option>
-                            <option value="difference">Difference</option>
-                            <option value="luminosity">Luminosity</option>
-                            <option value="multiply">Multiply</option>
-                        </select>
-                    </li>
+            </form>
+            <form id="image_filters">
+                <label for="filter_meme_image" class="form-label">FILTERS</label>
+                <div class="slide-container">
+                    <label for="filter_meme_brightness" class="form-sub-label">BRIGHTNESS</label><br>
+                    <input type="range" min="0" max="1" value="1" step="0.1" class="slider" id="brightness">
+                    <br>
+    
+                    <label for="filter_meme_opacity" class="form-sub-label">OPACITY</label><br>
+                    <input type="range" min="0" max="1" value="1" step="0.1" class="slider" id="opacity">
+                    <br>
+                    
+                    <label for="filter_meme_contrast" class="form-sub-label">CONTRAST</label><br>
+                    <input type="range" min="100" max="1000" value="100" step="1" class="slider" id="contrast">
+                    <br>
+    
+                    <label for="filter_meme_blur" class="form-sub-label">BLUR</label><br>
+                    <input type="range" min="0" max="10" value="0" step="0.1" class="slider" id="blur">
+                    <br>
+                    
+                    <label for="filter_meme_grayscale" class="form-sub-label">GRAYSCALE</label><br>
+                    <input type="range" min="0" max="100" value="0" step="1" class="slider" id="grayscale">
+                    <br>
+    
+                    <label for="filter_meme_sepia" class="form-sub-label">SEPHIA</label><br>
+                    <input type="range" min="0" max="100" value="0" step="1" class="slider" id="sepia">
+                    <br>
+    
+                    <label for="filter_meme_hue" class="form-sub-label">HUE</label><br>
+                    <input type="range" min="0" max="359" value="0" step="1" class="slider" id="hue-rotate">
+                    <br>
+    
+                    <label for="filter_meme_saturation" class="form-sub-label">SATURATION</label><br>
+                    <input type="range" min="100" max="1000" value="100" step="10" class="slider" id="saturate">
+                    <br>
+    
+                    <label for="filter_meme_invert" class="form-sub-label">INVERT</label><br>
+                    <input type="range" min="0" max="1" value="0" step="0.1" class="slider" id="invert">
+                    <br>
                 </div>
-            </div>
-        </form>
-        <form id="image_filters">
-            <label for="filter_meme_image" class="form-label">FILTERS</label>
-            <div class="slide-container">
-                <label for="filter_meme_brightness" class="form-sub-label">BRIGHTNESS</label><br>
-                <input type="range" min="0" max="1" value="1" step="0.1" class="slider" id="brightness">
-                <br>
-
-                <label for="filter_meme_opacity" class="form-sub-label">OPACITY</label><br>
-                <input type="range" min="0" max="1" value="1" step="0.1" class="slider" id="opacity">
-                <br>
-                
-                <label for="filter_meme_contrast" class="form-sub-label">CONTRAST</label><br>
-                <input type="range" min="100" max="1000" value="100" step="1" class="slider" id="contrast">
-                <br>
-
-                <label for="filter_meme_blur" class="form-sub-label">BLUR</label><br>
-                <input type="range" min="0" max="10" value="0" step="0.1" class="slider" id="blur">
-                <br>
-                
-                <label for="filter_meme_grayscale" class="form-sub-label">GRAYSCALE</label><br>
-                <input type="range" min="0" max="100" value="0" step="1" class="slider" id="grayscale">
-                <br>
-
-                <label for="filter_meme_sepia" class="form-sub-label">SEPHIA</label><br>
-                <input type="range" min="0" max="100" value="0" step="1" class="slider" id="sepia">
-                <br>
-
-                <label for="filter_meme_hue" class="form-sub-label">HUE</label><br>
-                <input type="range" min="0" max="359" value="0" step="1" class="slider" id="hue-rotate">
-                <br>
-
-                <label for="filter_meme_saturation" class="form-sub-label">SATURATION</label><br>
-                <input type="range" min="100" max="1000" value="100" step="10" class="slider" id="saturate">
-                <br>
-
-                <label for="filter_meme_invert" class="form-sub-label">INVERT</label><br>
-                <input type="range" min="0" max="1" value="0" step="0.1" class="slider" id="invert">
-                <br>
-            </div>
-            <input type="reset" value="Reset filters">
-        </form>
+                <input type="reset" value="Reset filters">
+            </form>
+        </div>
     </section>
 
     <!-- Sidebar Section: Text -->
-    <section class="section sidebar section-text">
+    <section class="section section-text">
         <form action="GET" id="text_properties">
             <label for="top_text" class="form-label">SUPERIOR</label><br>
             <input type="textarea" name="top_text" id="top_text" class="form-input" placeholder="TOP TEXT">

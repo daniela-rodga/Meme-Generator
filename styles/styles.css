@@ -115,3 +115,24 @@ a:visited {
     flex-grow: 1;
     background-size: cover;
 }
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    background-color: #FAFAFA;
+    position: fixed;
+    z-index: 100000;
+    overflow: auto;
+    float: right;
+    text-align: left;
+}
+
+.image-section-title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
