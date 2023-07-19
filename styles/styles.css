@@ -47,7 +47,7 @@ body {
 }
 
 /* Styles for the lists used in the document */
-.horizontal-list {
+.vertical-list, .horizontal-list {
     list-style-type: none;
 }
 
