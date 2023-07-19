@@ -6,11 +6,11 @@
 /* Navigation bar (navbar) styles */
 .navbar {
     top: 0;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-right: 21%;
+    padding: 0.8em;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
+    text-align: center;
     z-index: 1000;
     background-color: #191E2B;
     position: sticky;
@@ -45,4 +45,15 @@ body {
     display:flex;
     flex-direction: column;
 }
+
+/* Styles for the lists used in the document */
+.horizontal-list {
+    list-style-type: none;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
 
