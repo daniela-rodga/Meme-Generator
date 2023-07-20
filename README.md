@@ -1,6 +1,6 @@
 <h1 align="center">Meme Generator - Daniela Rodríguez</h1>
 &nbsp;
-<p align="center"><img src="./img/favicon.ico/" alt="Meme generator project image" width="100%" /></p>
+<p align="center"><img src="./img/favicomatic-2/favicon.ico" alt="Meme generator project image" width="100%" /></p>
 &nbsp;
 <h2>Module 2 JavaScript Project: Meme generator for the LOL's</h2>
 &nbsp;
@@ -9,7 +9,7 @@
 <p> With real-time preview features, users can instantly visualize their creations, making it easy to iterate and perfect their memes. The meme generator project offers a fun and creative outlet for users to express themselves while showcasing their wit and humor in a visually appealing format. Whether for personal amusement or sharing on social media, this application provides a delightful and entertaining experience for meme enthusiasts of all skill levels.</p>
 &nbsp;
 <p align="center">
-    <img src="https://w7.pngwing.com/pngs/585/981/png-transparent-html-js-and-css-logo-cascading-style-sheets-javascript-html-css3-jquery-logo-miscellaneous-text-trademark.png" alt="HTML, CSS and JavaScript image" width="400px"/>
+    <img src="https://www.freepnglogos.com/uploads/javascript/logo-html-5-css-javascript-source-code-for-the-taking-23.png" alt="HTML, CSS and JavaScript image" width="400px"/>
 </p>
 &nbsp;
 
