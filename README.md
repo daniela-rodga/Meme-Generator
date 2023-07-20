@@ -1,6 +1,6 @@
 <h1 align="center">Meme Generator - Daniela Rodríguez</h1>
 &nbsp;
-<p align="center"><img src="./img/favicomatic-2/favicon.ico" alt="Meme generator project image" width="100%" /></p>
+<p align="center"><img src="./img/favicomatic-2/favicon.ico" alt="Meme generator project image" width="15%" /></p>
 &nbsp;
 <h2>Module 2 JavaScript Project: Meme generator for the LOL's</h2>
 &nbsp;
