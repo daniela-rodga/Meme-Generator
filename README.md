@@ -22,5 +22,5 @@
     </li>
 </ul>
 
-<p>Link to the project deployed <a href="" target="_blank">Meme Generator- Daniela Rodríguez</a></p>
+<p>Link to the project deployed <a href="https://daniela-rodga.github.io/Meme-Generator/" target="_blank">Meme Generator- Daniela Rodríguez</a></p>
 
