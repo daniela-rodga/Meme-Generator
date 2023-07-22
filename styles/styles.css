@@ -1,12 +1,11 @@
 /* Cascade Styles Configuration for Meme Generator Project courtesy of Daniela Rodríguez awesome capabilities */
 * {
-    box-sizing:content-box;
+    box-sizing:border-box;
 }
 
 /* Navigation bar (navbar) styles */
 .navbar {
     top: 0;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -119,10 +118,7 @@ a:visited {
 .sidebar {
     height: 100%;
     width: 200px;
-    padding-top: 1rem;
-    padding-bottom: 0.7rem;
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
+    padding: 1rem;
     background-color: #FAFAFA;
     position: fixed;
     z-index: 100000;
@@ -137,3 +133,20 @@ a:visited {
     font-size: 1.2rem;
 }
 
+/* Styles for the form classes used in the sidebar sections */
+.form-label {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #E0E0E0;
+}
+
+input[type="text" i] {
+    padding: 0px;
+}
